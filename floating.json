@@ -1,0 +1,7 @@
+{
+  "trigger": {
+    "openTooltip": "Minimize",
+    "closedTooltip": "Open",
+    "ariaLabel": "Contact and help"
+  }
+}

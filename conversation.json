@@ -1,0 +1,13 @@
+{
+    "widget-header": {
+        "header": "Chat",
+        "actions": {
+            "close": {
+                "tooltip": "Close chat"
+            },
+            "minimize": {
+                "tooltip": "Minimize chat"
+            }
+        }
+    }
+}

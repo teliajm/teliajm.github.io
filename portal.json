@@ -1,0 +1,44 @@
+{
+  "guide-list-new": {
+    "$type": "guide-list",
+    "rootLabel": "New guides"
+  },
+  "guide-list-modified": {
+    "$type": "guide-list",
+    "rootLabel": "Last updated guides"
+  },
+  "guide-list-favorites": {
+    "$type": "guide-list",
+    "rootLabel": "My favorites"
+  },
+  "guide": {
+    "metadataModifiedLabel": "last modified: ",
+    "metadataPublishedLabel": "Published: ",
+    "metadataByLabel": "by {{editor}}",
+    "toolbarLanguageTooltip": "Change language",
+    "toolbarFunctionsTooltip": "Options"
+  },
+  "guide-list": {
+    "fetchGuidesLabel": "Fetch more",
+    "categoryLinkLabel": "Fetch more"
+  },
+  "tag-list-tabs": {
+    "$type": "tag-list",
+    "header": null,
+    "rootTagLabel": "All"
+  },
+  "breadcrumbs": {
+    "guideCategoryRootLabel": null
+  },
+  "contact-link": {
+    "descriptionLabel": "Click here if you have questions, ideas, have found errors or are missing content.",
+    "label": "Thoughts on the service"
+  },
+  "search": {
+    "deleteFilterBadgeAriaLabel": "Remove filter: {{item}}."
+  },
+  "settings-dropdown": {
+    "$type": "area",
+    "header": "Settings"
+  }
+}

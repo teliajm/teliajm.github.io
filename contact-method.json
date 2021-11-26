@@ -1,0 +1,18 @@
+{
+    "widget-header": {
+        "header": "Chat",
+        "actions": {
+            "close": {
+                "tooltip": "Close chat"
+            },
+            "minimize": {
+                "tooltip": "Minimize chat"
+            }
+        }
+    },
+    "trigger": {
+        "openTooltip": "Minimze",
+        "closedTooltip": "Open",
+        "ariaLabel": "Contact and help"
+    }
+}

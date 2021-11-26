@@ -1,0 +1,9 @@
+{
+    "widget-header": {
+        "header": "Contact us",
+        "tooltip": "Back to start"
+    },
+    "close-button": {
+        "ariaLabel": "Close popup window Contact us"
+    }
+}

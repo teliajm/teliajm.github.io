@@ -1,0 +1,181 @@
+{
+    "guide-category-list": {
+        "allCategories": "All categories",
+        "categoryAriaLabel": "Category: {{category}}",
+        "activeCategoryAriaLabel": "Chosen Category: {{category}}"
+    },
+    "guide-category-browser": {
+        "guideListHeader": "Frequently asked questions",
+        "guideListCategoryHeader": "Most common questions in \"{{categoryName}}\"",
+        "fetchGuidesLabel": "Fetch more",
+        "categoryLinkLabel": "Show more"
+    },
+    "guide-category-tree": {
+        "rootCategoryHeader": "All categories",
+        "categoryAriaLabel": "Category: {{category}}",
+        "activeCategoryAriaLabel": "Chosen Category: {{category}}",
+        "caretAriaLabel": "Submenu, {{category}}"
+    },
+    "guide-category-dropdown": {
+        "rootCategoryHeader": "All categories",
+        "categoryAriaLabel": "Category: {{category}}",
+        "activeCategoryAriaLabel": "Chosen Category: {{category}}"
+    },
+    "guide-list": {
+        "categoryFallbackHeader": "all categories",
+        "rootLabel": "Frequently asked questions",
+        "categoryRootLabel": "Common questions",
+        "searchResultsLabel": "Search results",
+        "searchResultsEmptyLabel": "No search results",
+        "noMatchesLabel": "No questions",
+        "inCategoryLabel": "in \"{{category}}\"",
+        "withTagLabel": "with \"{{tag}}\"",
+        "forPhraseLabel": "for \"{{phrase}}\"",
+        "fetchGuidesLabel": "Fetch more",
+        "categoryLinkLabel": "Show more",
+        "sortingHeader": "Order by",
+        "alphabeticAscending": "Alphabetical, A-Z",
+        "alphabeticDescending": "Alphabetical, Z-A",
+        "popularityDescending": "Popularity",
+        "modifiedAscending": "Last modified, Old-New",
+        "modifiedDescending": "Last modified, New-Old",
+        "publishedAscending": "Published, Old-New",
+        "publishedDescending": "Published, New-Old",
+        "removeFavoriteTooltip": "Remove favorite",
+        "addFavoriteTooltip": "Add as favorite",
+        "removeFavoriteHeader": "Remove favorite",
+        "removeFavoriteLabel": "Are you sure you want to remove the guide from \"My favorites\"?",
+        "removeFavoriteConfirmLabel": "Remove",
+        "removeFavoriteCancelLabel": "Cancel",
+        "sortingCloseButtonAriaLabel": "Close sorting"
+    },
+    "search": {
+        "placeholder": "Search frequently asked questions",
+        "searchButtonLabel": "Search",
+        "clearButtonLabel": "Clear",
+        "ariaLabel": "Search frequently asked questions. The results appear below the search field."
+    },
+    "guide": {
+        "feedbackHeader": "Was this the answer to your question?",
+        "positiveFeedbackLabel": "Yes",
+        "negativeFeedbackLabel": "No",
+        "contactFeedbackLabel": "No - contact us",
+        "contactHeader": "Contact us",
+        "feedbackRecognitionLabel": "Thank you for the feedback!",
+        "submitButtonLabel": "Submit",
+        "fileUploadHeader": "Choose a file",
+        "fileSizeErrorLabel": "Attached file exceeds maximum file size.",
+        "validationHeader": "We found errors in the form",
+        "requiredErrorLabel": "{{component}} is required",
+        "toolbarFunctionsHeader": "Options",
+        "toolbarFunctionsTooltip": "Options",
+        "copyActionLabel": "Copy",
+        "printActionLabel": "Print",
+        "saveFavoriteLabel": "Save as favorite",
+        "removeFavoriteLabel": "Are you sure you want to remove the guide from \"My favorites\"?",
+        "toolbarLanguageHeader": "Change language",
+        "toolbarLanguageTooltip": "Choose language",
+        "addFavoriteTooltip": "Add as favorite",
+        "removeFavoriteConfirmLabel": "Remove",
+        "removeFavoriteCancelLabel": "Cancel",
+        "removeFavoriteTooltip": "Remove favorite",
+        "removeFavoriteHeader": "Remove favorite",
+        "requiredDescriptionLabel": "Fields with * are required.",
+        "toolbarFunctionsCloseButtonAriaLabel": "Close functions",
+        "backButtonLabel": "Back",
+        "svLanguageLabel": "Swedish",
+        "enLanguageLabel": "English",
+        "daLanguageLabel": "Danish",
+        "fiLanguageLabel": "Finnish",
+        "nnLanguageLabel": "Norwegian",
+        "deLanguageLabel": "German",
+        "nlLanguageLabel": "Dutch",
+        "frLanguageLabel": "French",
+        "esLanguageLabel": "Spanish",
+        "itLanguageLabel": "Italian",
+        "ruLanguageLabel": "Russian",
+        "lvLanguageLabel": "Latvian",
+        "ltLanguageLabel": "Lithuanian",
+        "isLanguageLabel": "Icelandic",
+        "ptLanguageLabel": "Portuguese",
+        "plLanguageLabel": "Polish",
+        "elLanguageLabel": "Greek"
+    },
+    "tag-list": {
+        "header": "Tags",
+        "itemAriaLabel": "Filter on {{title}}, {{matches}} matches"
+    },
+    "widget-header": {
+        "header": "What do you need help with?",
+        "tooltip": "Back to start"
+    },
+    "contact-list": {
+        "submitButtonLabel": "Submit",
+        "deflectionHeader": "Maybe these questions can be helpful?",
+        "fileUploadHeader": "Choose a file",
+        "fileSizeErrorLabel": "Attached file exceeds maximum file size.",
+        "validationHeader": "We found errors in the form",
+        "requiredErrorLabel": "{{component}} is required",
+        "requiredDescriptionLabel": "Fields with * are required."
+    },
+    "contact-method": {
+        "submitButtonLabel": "Submit",
+        "fileSizeErrorLabel": "Attached file exceeds maximum file size.",
+        "fileUploadHeader": "Choose a file",
+        "validationHeader": "We found errors in the form",
+        "requiredErrorLabel": "{{component}} is required",
+        "requiredDescriptionLabel": "Fields with * are required."
+    },
+    "contact-link": {
+        "descriptionLabel": "If you need to contact us you can find information here",
+        "label": "Contact us"
+    },
+    "breadcrumbs": {
+        "startLabel": "Start",
+        "guideCategoryRootLabel": "Frequently asked questions",
+        "tagLabel": "Tag: \"{{tag}}\"",
+        "phraseLabel": "Search results for: \"{{phrase}}\""
+    },
+    "back-link": {
+        "label": "Back"
+    },
+    "related-guide-list": {
+        "header": "Related questions"
+    },
+    "related-tag-list": {
+        "header": "Related tags"
+    },
+    "notification-row": {
+        "pageNextAriaLabel": "Next notification",
+        "pagePreviousAriaLabel": "Previous notification",
+        "closeAriaLabel": "Close notification"
+    },
+    "conversation": {
+        "inputPlaceholder": "Type your message here...",
+        "sendButtonLabel": "Send message",
+        "userLabel": "Me"
+    },
+    "conversation-return-button": {
+        "label": "Ongoing chat - Click here to return"
+    },
+    "customTexts": {
+        "compactContactLink": "Can't find what you're looking for?",
+        "contactBanner": "Contact us"
+    },
+    "close-button": {
+        "ariaLabel": "Close"
+    },
+    "not-found": {
+        "header": "The page could not be found",
+        "linkLabel": "Click here to return to the start page.",
+        "suggestionHeader": "Feel free to try the following:",
+        "suggestionLabel": "Make sure the URL you are trying to reach is correct."
+    },
+    "settings": {
+        "languagePickerHeader": "Languages"
+    },
+    "logotype": {
+        "$type": "image-link",
+        "altLabel": "Telia, logotype"
+    }
+}
