@@ -16,6 +16,7 @@
  *
  */
 /* global G_IS_HOOKED:false */
+console.log("JMquery");
 (function($, window) {
     "use strict";
 
