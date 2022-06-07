@@ -3432,6 +3432,17 @@ function humany_BankIDauth(ssn) {
     fetch("https://cso-stage-ccs.labbn.se/convhub/fulfillment/deploybox/v1/eon-selfservice/zai269/auth", requestOptions)
     .then(response => response.json())
     .then(result => {
+        if(result.hasOwnProperty("autoStartToken")) {
+            var bankIdButton = document.getElementById("humany-bankid-button");
+            bankIdButton.replaceWith(bankIdButton.cloneNode());
+            bankIdButton = document.getElementById("humany-bankid-button");
+            bankIdButton.innerText = "Starta BankID-app";
+            bankIdButton.addEventListener("click", function() {
+                alert(`https://app.bankid.com/?autostarttoken=${result.autoStartToken}&redirect=https://teliajm.github.io/bankid.html`);
+                window.location.href = `https://app.bankid.com/?autostarttoken=${result.autoStartToken}&redirect=https://teliajm.github.io/bankid.html`;
+            });
+            
+        }
         console.log("BankID initialize.");
         doc.querySelector("#humany-bankid-desc").innerText = "Starta din BankID-app";
         doc.querySelector("#humany-bankid-loader").style.visibility = "visible";
@@ -3454,7 +3465,7 @@ async function humany_pollEvent(orderRef) {
     setTimeout(function(){ humany_pollEvent(orderRef); }, 2000);
   }
   if(status == "complete") {
-    alert("BankID completed!");
+    console.log("BankID completed!");
     doc.querySelector("#humany-bankid-desc").innerText = "Du har identifierats!";
     doc.querySelector("#humany-bankid-loader").style.visibility = "hidden";
     doc.querySelector("#humany-bankid-check").style.visibility = "visible";
@@ -3540,7 +3551,6 @@ function humany_BankIDcancel(orderRef) {
     .catch(error => console.log('error', error));
 
 }
-console.log("New version");
 </script>  
   </body>
 </html>
