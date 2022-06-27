@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script async="" src="//sl.humany.net/sl-chatt/embed.js"></script>
+</head>
+<body>
+    <script>
+
+        var convHub = document.createElement("script");
+        convHub.src = "https://wds.ace.teliacompany.com/wds/instances/Jk4W2qJs/convHub-webconnector.js";
+        (function () {
+          var loadConvHub = function () {
+            console.log("Checking...");
+            if (typeof humany === 'object') {
+              document.body.appendChild(convHub);
+            } else setTimeout(loadConvHub, 1000);
+          };
+          loadConvHub();
+        }());
+        
+        window.WCPSettings = {
+            baseUrl: "https://api.convhub.ccs.teliacompany.net/webconnector/v1",
+            entities: [
+                {
+                    extension: "eon-anstand-chat-production",
+                    language: "sv-SE",
+                    entityName: "plugin.dialogflow-anstand",
+                    initCommand: "Welcome",
+                },
+                {
+                    extension: "eon-utflytt-chat-production",
+                    language: "sv-SE",
+                    entityName: "plugin.dialogflow-utflytt",
+                    initCommand: "Welcome",
+                    activation: 'init'
+                }
+            ]
+        };
+        
+      </script>
+      <a href="//sl.humany.net/slchattnotbot">Kundtjänst</a>
+</body>
+</html>
