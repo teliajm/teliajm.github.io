@@ -1,3 +1,5 @@
+(async()=>{
+    
 /* Settings */
 const downloadJSON = false
 const shortTimestamp = true
@@ -327,3 +329,5 @@ async function fetchDialogJson(dialogId) {
     })
     return json
 }
+
+})();
