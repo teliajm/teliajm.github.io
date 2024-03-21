@@ -302,7 +302,7 @@ async function createLogFile(startDate, untilDate) {
     dialogs.push(dialog.id);
   });
   if (pageCount > 1) {
-    for (page = 2; page <= pageCount; page++) {
+    for (let page = 2; page <= pageCount; page++) {
       let dialogsUrl = jsonData.requestUrl
         .replace(/page=[0-9]*/, 'page=' + page)
         .replace(/page-size=[0-9]*/, 'page-size=50');
