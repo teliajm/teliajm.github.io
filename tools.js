@@ -1,5 +1,3 @@
-const tabs = document.querySelectorAll(".tablinks");
-if(tabs) tabs[0].style.fontWeight = "600";
 function openTab(index, id) { 
     const tabContents = document.querySelectorAll(".tabcontent");
     tabContents.forEach(tabContent => {
@@ -10,8 +8,8 @@ function openTab(index, id) {
 
     const tabs = document.querySelectorAll(".tablinks");
     tabs.forEach(tab => {
-        tab.style.fontWeight = "normal";
+        tab.style.boxShadow = "rgb(204, 204, 204) 0px 0.5px";
     })
     const activeTab = tabs[index-1];
-    activeTab.style.fontWeight = "600";
+    activeTab.style.boxShadow = "rgb(255, 255, 255) 0.5px 1px 0px";
 }
