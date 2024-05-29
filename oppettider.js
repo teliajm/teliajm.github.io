@@ -93,13 +93,13 @@ function createOpeningHours(jsonResponse, id){
         }
 
         if(openingMinute !== 0 && closingMinute !== 0){
-            interval += openingHour + '.' + openingMinute + '-' + closingHour + '.' + closingMinute;
+            interval += openingHour + ':' + openingMinute + '-' + closingHour + ':' + closingMinute;
         }
         else if(openingMinute !== 0){
-            interval += openingHour + '.' + openingMinute + '-' + closingHour;
+            interval += openingHour + ':' + openingMinute + '-' + closingHour;
         }
         else if(closingMinute !== 0){
-            interval += openingHour + '-' + closingHour + '.' + closingMinute;
+            interval += openingHour + '-' + closingHour + ':' + closingMinute;
         }
         else{
             interval += openingHour + '-' + closingHour;
