@@ -1,0 +1,28 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <div>Instans: <input id="instance" value="demobolaget.humany.net" /></div>
+    <div>Implementation: <input id="implementation" /></div>
+    <div>Widget: <input id="widget" /></div>
+    <div><button id="submit">Lägg till widget på sidan</div>
+    <script>
+      const instanceElement = document.querySelector("#instance");
+      const implementationElement = document.querySelector("#implementation");
+      const widgetElement = document.querySelector("#widget");
+      const submitButton = document.querySelector("#submit");
+      submitButton.addEventListener("click", () => {
+          const link = document.createElement("a");
+          const instance = instanceElement.value;
+          const implementation = implementationElement.value;
+          const widget = widgetElement.value;
+          link.href = `//${instance}/${widget}`;
+          document.body.appendChild(link);
+
+          const embed = document.createElement("script");
+          embed.src = `//${instance}/${implementation}/index.js`;
+          document.head.appendChild(embed);
+      });
+    </script>
+  </body>
+</html>
