@@ -2,6 +2,22 @@
 <!doctype html>
 <html>
   <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+    default-src 'none';
+    script-src 'self' 'nonce-random-123' 'strict-dynamic' http://localhost:4200 'unsafe-inline';
+    connect-src 'self' 'nonce-random-123' http://localhost:4200 https://*.webprovisions.io wss://*.humany.net wss://*.teliacompany.net https://*.humany.net https://*.teliacompany.net;
+    frame-src 'self' 'nonce-random-123' http://localhost:4200 https://*.webprovisions.io wss://*.humany.net wss://*.teliacompany.net https://*.humany.net https://*.teliacompany.net;
+    style-src 'self' 'nonce-random-123' http://localhost:4200 https://*.teliacompany.com https://*.humany.net https://fonts.googleapis.com;
+    img-src 'self' blob: data:;
+    font-src 'self' https://*.humany.net https://fonts.googleapis.com https://fonts.gstatic.com;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+    media-src 'self' data:;
+          "
+    />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>testtesttest</title>
