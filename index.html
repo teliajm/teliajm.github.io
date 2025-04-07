@@ -1,15 +1,14 @@
-
 <!doctype html>
 <html>
   <head>
     <meta http-equiv="Content-Security-Policy" content="
       default-src 'none';
-      script-src 'self' 'nonce-random-123' 'strict-dynamic' https: http: 'unsafe-inline';
-      connect-src 'self' 'nonce-random-123' https://*.webprovisions.io wss://*.humany.net wss://*.teliacompany.net https://*.humany.net https://*.teliacompany.net;
-      style-src 'self' 'nonce-random-123' https://*.teliacompany.com https://*.humany.net https://fonts.googleapis.com;
-      frame-src https://widgets-dev.ace.teliacompany.net;
+      script-src 'self' 'nonce-random-123' 'strict-dynamic' https: http:;
+      connect-src 'self' 'nonce-random-123' https://*.ace.teliacompany.net;
+      style-src 'self' 'nonce-random-123';
+      frame-src https://*.ace.teliacompany.net;
       img-src 'self' blob: data:;
-      font-src 'self' https://*.humany.net https://fonts.googleapis.com https://fonts.gstatic.com;
+      font-src 'self';
       object-src 'none';
       base-uri 'self';
       form-action 'self';
@@ -17,7 +16,7 @@
     ">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSP support</title>
+    <title>CSP</title>
     <script nonce="random-123">
       /* ACE Widgets - Embed v17 */
       (function(e,t){var n=document.getElementsByTagName("script")[0];var i=document.createElement("script");i.type="module";
