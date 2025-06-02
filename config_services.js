@@ -61,7 +61,7 @@ CallGuide.config.services = {
       // ASSOCIATED DOMAINS
       // ///////////////////
 
-      singleDomain: false,
+      singleDomain: true,
 
       // One instance of ACE Web SDK can be loaded on more than one domain,
       // and cobrowsing and chat follows seamlessly across the involved domains.
