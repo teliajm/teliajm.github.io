@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Child</title>
+</head>
+<body>
+  <button onclick="skickaMeddelande()">Skicka till parent</button>
+
+  <script>
+    window.addEventListener("message", (event) => {
+      alert(`Iframe fick: ${event.data}`);
+      event.source.postMessage("Hej tillbaka från iframe!", event.origin);
+    });
+
+    function skickaMeddelande() {
+      window.parent.postMessage("Knappen i iframe klickades!", "*");
+    }
+  </script>
+</body>
+</html>
