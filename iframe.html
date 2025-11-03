@@ -9,6 +9,7 @@
 
   <script>
     window.addEventListener("message", (event) => {
+      if(event.origin !== 'http://localhost:8081/') return;
       alert(`Iframe fick: ${event.data}`);
       event.source.postMessage("Hej tillbaka från iframe!", event.origin);
     });
