@@ -5,13 +5,14 @@
   <title>Child</title>
 </head>
 <body>
-  IFRAMEN
+  ###IFRAMEN
   <button id="knappen" onclick="skickaMeddelande()">Skicka till parent</button>
 
   <script>
     window.addEventListener("message", (event) => {
       alert(`Origin: ${event.origin}`);
-      document.getElementById("knappen").ínnerHTML = event.data;
+      document.getElementById("knappen").innerHTML = event.data;
+      console.log("### Eventet", event);
       if(event.origin !== 'http://localhost:8081/') return;
       alert(`Iframe fick: ${event.data}`);
       event.source.postMessage("Hej tillbaka från iframe!", event.origin);
